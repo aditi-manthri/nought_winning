@@ -1,0 +1,49 @@
+body {
+    font-family: Helvetica , sans-serif;
+    background-color: #EDE8DC;
+    color:#6C3C3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #A5B68D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #C1CFA1;
+}
+
+#reset-button {
+    margin-top: 20px;
+    color: #E7CCCC;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #6C3C3C;
+    cursor: pointer;
+}  
+
+#reset-button:hover {
+    background-color: #DAB6B6; 
+}
